@@ -12,7 +12,7 @@ const Form = ({ inputText, setInputText, todos, setTodos }) => {
     setTodos([...todos, { text: inputText, completed: false, id: uniqid() }]);
     setInputText("");
   };
-
+  
   return (
     <form>
       <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
